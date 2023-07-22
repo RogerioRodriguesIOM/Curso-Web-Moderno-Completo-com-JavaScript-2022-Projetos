@@ -1,42 +1,66 @@
-<h1>Projeto</h1>
-<ul class="tree">
-  <li>
-    backend
-    <ul>
-      <li>
-        app
-        <ul>
-          <li>produto.js</li>
-          <li>usuario.js</li>
-          <li>venda.js</li>
-        </ul>
-      </li>
-      <li>
-        config
-        <ul>
-          <li>banco.js</li>
-          <li>rotas.js</li>
-          <li>servidor.js</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    frontend
-    <ul>
-      <li>
-        piblic
-        <ul>
-          <li>app.css</li>
-          <li>app.js</li>
-          <li>index.html</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<link rel="stylesheet" href="https://files.cod3r.com.br/curso-web/tree.css">
+<!-- Exercicio Desafio da Aula: Qual codigo preciso criar para quando clicar em cima de backend, confg e frontend, desaparecam as informacoes de cada um deles, sem alterar qualquer outra informacao do codigo?-->
 
 
-<!-- Desafio da aula: Qual codigo preciso criar para quando clicar em cima de backend, confg e frontend, desaparecam as informacoes de cada um deles, sem alterar qualquer outra informacao do codigo?-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Projeto</title>
+  <link rel="stylesheet" href="https://files.cod3r.com.br/curso-web/tree.css">
+  <style>
+    /* Adicione um estilo personalizado para ocultar as seções */
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Projeto</h1>
+  <ul class="tree">
+    <li>
+      <span class="section" onclick="toggleSection('backend')">backend</span>
+      <ul id="backend">
+        <li>
+          app
+          <ul>
+            <li>produto.js</li>
+            <li>usuario.js</li>
+            <li>venda.js</li>
+          </ul>
+        </li>
+        <li>
+          config
+          <ul>
+            <li>banco.js</li>
+            <li>rotas.js</li>
+            <li>servidor.js</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <span class="section" onclick="toggleSection('frontend')">frontend</span>
+      <ul id="frontend">
+        <li>
+          public
+          <ul>
+            <li>app.css</li>
+            <li>app.js</li>
+            <li>index.html</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <script>
+    function toggleSection(sectionName) {
+      // Obtém o elemento <ul> associado ao nome da seção
+      const section = document.getElementById(sectionName);
+      // Alterna a classe 'hidden' para mostrar ou ocultar a seção
+      section.classList.toggle('hidden');
+    }
+  </script>
+</body>
+
+</html>
