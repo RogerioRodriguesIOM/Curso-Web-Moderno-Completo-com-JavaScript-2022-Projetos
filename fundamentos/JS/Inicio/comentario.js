@@ -11,4 +11,4 @@ sera EXECUTADO se usar
 no inicio e final.
 */
 
-
+console.log('Passo #02');
