@@ -2,6 +2,11 @@
 // O Boclo eh tudo que estiver entre chaves {}. E dentro dos blocos pode haver varioas sentencas de codigos, que terminam com ;
 // Eh possivel abrir varios blocos de codigos dentro de outro 
 //ex: 
+
+
+// Como um codigo de um programa eh organizado: 
+// Pastas, Arquivos (.c .py .js .cpp), sentencas de codigos e blocos de codigos.
+
 {
   console.log("Passo #01");
   console.log("Passo #02");
