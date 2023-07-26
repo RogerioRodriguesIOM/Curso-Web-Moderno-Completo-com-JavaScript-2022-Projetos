@@ -15,3 +15,18 @@
   console.log("Passo #06");
   console.log("Passo #07")
 }
+{
+  {
+    {
+      {
+        {
+          {
+            ;
+            ;
+            ;
+          }
+        }
+      }
+    }
+  }
+}
