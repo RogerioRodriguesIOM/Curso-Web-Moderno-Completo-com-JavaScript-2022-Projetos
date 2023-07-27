@@ -12,3 +12,5 @@ console.log(precoFinal);
 
 nome = "Caneta BIC";
 console.log(nome);
+
+//Obs: Hoje em dia nao se utiliza mais VAR e sim let para definir variavel. Inicialmente nao fara diferenca mas veremos adiante as diferencas.
