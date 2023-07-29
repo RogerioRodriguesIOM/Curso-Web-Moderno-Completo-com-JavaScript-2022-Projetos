@@ -1,6 +1,3 @@
-let a = 7
-let b = 94
-
 let a = 7;
 let b = 94;
 // Trocar os valores das variáveis usando uma variável auxiliar
